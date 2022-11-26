@@ -34,7 +34,7 @@ unsigned int convert_sbase(buffer_t *output, long int num, char *base,
 
 	else
 	{
-		for (; prec > 1; prec--, wid--) 
+		for (; prec > 1; prec--, wid--)
 			ret += _memcpy(output, &pad, 1);
 
 		if (NEG_FLAG == 0)
